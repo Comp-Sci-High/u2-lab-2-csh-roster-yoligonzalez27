@@ -11,7 +11,18 @@
 // csRoster, mathRoster, elaRoster, ssRoster, electivesRoster (5 arrays total)
 // Each should contain 3 unique student names (you can make them up or use classmates)
 
+let csRoster = ["osmelly ", "Mile", "kiana"]  
+let mathRoster = ["Sophis", "jennifer", "marco"]
+let elaRoster = ["jayden", "aasman", "eddie"]
+let ssRoster = ["murphy", "lia", "ashley"]
+let electivesRoster = ["miguel", "kimberly", "ava"]
 
+console.log("Inital Roster")
+console.log("CS:", csRoster)
+console.log("Math:", mathRoster)
+console.log("Ela:", elaRoster)
+console.log("SS:", ssRoster)
+console.log("Elective:", electivesRoster)
 
 
 
@@ -26,7 +37,18 @@
 // Add Laila → Social Studies
 // Add Jayden → Electives
 
+csRoster.push("JP")
+mathRoster.push("Arnold")
+elaRoster.push("Peach")
+ssRoster.push("Laila")
+electivesRoster.push("Jayden")
 
+console.log("\nAfter Adding New Students")
+console.log("CS:", csRoster)
+console.log("Math:", mathRoster)
+console.log("Ela:", elaRoster)
+console.log("SS:", ssRoster)
+console.log("Elective:", electivesRoster)
 
 
 
@@ -38,7 +60,10 @@
 // Use an array method to remove Jayden from the electivesRoster.
 
 
+electivesRoster.pop()
 
+console.log("\nAfter Jayden Unenrolled:")
+console.log("Elective:", electivesRoster)
 
 
 // ----------------------------------------------------------
@@ -51,14 +76,18 @@
 // 3: ssRoster
 // 4: electivesRoster
 
+let cshRoster = [csRoster, mathRoster, elaRoster, ssRoster, electivesRoster]
 
+console.log("\nAll csh Rosters Combined")
+console.log(cshRoster)
 
 
 
 // Using ONLY cshRosters and list indexing, print the name of the
 // second student in the ssRoster (index 3 in cshRosters)
 
-
+console.log("\nSecond student in the SS roster:")
+console.log(cshRoster[3][1])
 
 
 
